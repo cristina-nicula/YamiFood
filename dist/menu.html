@@ -42,7 +42,7 @@
         <!--        TODO: nested items menu-->
         <!--        TODO: border radius doar la primul si ultimul buton-->
         <ul class="menu">
-          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li>
             <a href="index.html">Pages <i class="fas fa-sort-down"></i> </a>
             <div class="submenu-1">
@@ -56,7 +56,7 @@
           <li>
             <a href="index.html">Blog <i class="fas fa-sort-down"></i> </a>
           </li>
-          <li><a href="menu.html">Menu</a></li>
+          <li><a href="menu.html" class="current">Menu</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -64,67 +64,145 @@
     </header>
 
     <!--  Header - end -->
-    <!--  Showcase Section -begin -->
-
-    <section id="home-a">
-      <div class="container-showcase">
-        <h1 class="header-a">
-          <strong>
-            Welcome To
-            <br />
-            <br />
-            <br />
-            YamiFood Restaurant
-          </strong>
-        </h1>
-        <p class="text-a center-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-          cum dicta dolore
-          <br />
-          laudantium nemo placeat ut. Architecto atque laudantium suscipit!
+    <!--    Background Section - begin -->
+    <div class="background">
+      <h1 class="text-c center-text">Special Menu</h1>
+    </div>
+    <!--    Background Section - end-->
+    <!--Menu Section - begin -->
+    <section id="main-menu">
+      <div class="container-menu">
+        <h2 class="text-d center-text">Special Menu</h2>
+        <p class="text-b center-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+          provident.
         </p>
-        <button class="btn-light" onclick="location.href='https://google.com';">
-          Reservation
-        </button>
-      </div>
-    </section>
-
-    <!--  Showcase section - end -->
-    <!--  About Section -Start -->
-
-    <section id="home-b">
-      <div class="container-about">
-        <!--        TODO:hover effect cand faci scroll in aceasta sectiune textul apare eased in-->
-        <img src="img/about-img.jpg" alt="" class="about-img" />
-        <div class="about-description">
-          <h2 class="text-title">
-            Welcome To <span class="text-span">YamiFood Restaurant</span>
-          </h2>
-          <br />
-          <br />
-          <p class="text-b center-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-            eius illum optio totam vel vero! Aliquid commodi consequatur debitis
-            distinctio error harum in incidunt, nulla, perferendis quas,
-            temporibus voluptatibus. Iste!
-          </p>
-          <br />
-          <p class="text-b center-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-            consequatur illo illum minus similique sit ut veritatis vero
-            voluptates voluptatum.
-          </p>
-          <button
-            class="btn-dark"
-            onclick="location.href='https://google.com';"
-          >
-            Reservation
-          </button>
+        <br />
+        <br />
+        <div class="menu-items">
+          <div class="item">
+            <div class="item-image">
+              <img src="img/img-01.jpg" alt="Drink1" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <h2 class="item-name">Special Drink 1</h2>
+                <p class="text-a">
+                  Lorem ipsum dolor sit amet, consectetur.
+                </p>
+                <div class="bottom-line"></div>
+                <p class="text-price">$7.79</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/img-02.jpg" alt="Drink2" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <h2 class="item-name">Special Drink 2</h2>
+                <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                <div class="bottom-line"></div>
+                <p class="text-price">$9.79</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/img-03.jpg" alt="Drink3" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <h2 class="item-name">Special Drink 3</h2>
+                <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                <div class="bottom-line"></div>
+                <p class="text-price">$10.59</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/img-04.jpg" alt="Lunch1" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <h2 class="item-name">Special Lunch 1</h2>
+                <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                <div class="bottom-line"></div>
+                <p class="text-price">$17.79</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/img-05.jpg" alt="Lunch2" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <h2 class="item-name">Special Lunch 2</h2>
+                <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                <div class="bottom-line"></div>
+                <p class="text-price">$15.79</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/img-06.jpg" alt="Lunch3" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <h2 class="item-name">Special Lunch 3</h2>
+                <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                <div class="bottom-line"></div>
+                <p class="text-price">$18.79</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/img-07.jpg" alt="Dinner1" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <h2 class="item-name">Special Dinner 1</h2>
+                <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                <div class="bottom-line"></div>
+                <p class="text-price">$20.79</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/img-08.jpg" alt="Dinner2" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <h2 class="item-name">Special Dinner 2</h2>
+                <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                <div class="bottom-line"></div>
+                <p class="text-price">$21.79</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/img-09.jpg" alt="Dinner3" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <h2 class="item-name">Special Dinner 3</h2>
+                <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                <div class="bottom-line"></div>
+                <p class="text-price">$23.25</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <!--  About Section - end -->
+    <!--    Menu Section - end -->
     <!--  Quotation Section - begin -->
 
     <section id="home-c">
@@ -139,45 +217,6 @@
     </section>
 
     <!--  Quotation Section - end -->
-    <!--    Gallery Section - begin -->
-
-    <section id="home-d">
-      <div class="container-gallery">
-        <h2 class="text-d center-text">Gallery</h2>
-        <p class="text-b center-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-          tempora!
-        </p>
-        <div class="gallery-items">
-          <div
-            class="gallery-item"
-            style="background-image: url('img/gallery-img-01.jpg');"
-          ></div>
-          <div
-            class="gallery-item"
-            style="background-image: url('img/gallery-img-02.jpg');"
-          ></div>
-          <div
-            class="gallery-item"
-            style="background-image: url('img/gallery-img-03.jpg');"
-          ></div>
-          <div
-            class="gallery-item"
-            style="background-image: url('img/gallery-img-04.jpg');"
-          ></div>
-          <div
-            class="gallery-item"
-            style="background-image: url('img/gallery-img-05.jpg');"
-          ></div>
-          <div
-            class="gallery-item"
-            style="background-image: url('img/gallery-img-06.jpg');"
-          ></div>
-        </div>
-      </div>
-    </section>
-
-    <!--    Gallery Section - end-->
     <!--  Testimonials Section -begin -->
 
     <section id="home-e">

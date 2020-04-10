@@ -6,6 +6,24 @@
   align-content: center;
 }
 
+.container-nav .fas {
+  margin-left: 6px;
+}
+
+.background {
+  height: 430px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/all-bg.jpg") no-repeat top center/cover;
+  line-height: 300px;
+}
+
+.bottom-line {
+  border: 0.5px dashed #343a40;
+  width: 290px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .gallery-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -22,6 +40,88 @@
   transform: scale(1.05);
   box-shadow: 0 10px 20px #ccc;
   transition: transform 0.3s ease-out;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  grid-gap: 20px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+.item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #d0a772;
+  opacity: 0.9;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(2) translateY(100%) rotate(90deg);
+  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.item:hover:after {
+  transform: scale(2) translateY(0) rotate(90deg);
+}
+.item-name {
+  font-family: "Arbutus Slab", serif;
+  font-weight: lighter;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.item:hover .item-image {
+  transform: scale(1.1);
+}
+.item:hover .item-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+.item-image {
+  height: 100%;
+  display: block;
+  transform: translateZ(0);
+  transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+.item-image:before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+  overflow: hidden;
+}
+.item-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  line-height: 0;
+}
+.item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+  transform: translateY(-20%);
+  transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
+    transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+.item-text-wrap {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  transform: translateY(-50%);
 }
 
 * {
@@ -53,11 +153,10 @@ img {
 
 #home-header {
   width: 100%;
-  overflow: hidden;
   background: #f8f9fa;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
 }
 
 #home-a {
@@ -65,7 +164,6 @@ img {
     url("../img/slider-03.jpg") no-repeat center center/cover;
   width: auto;
   height: 770px;
-  position: relative;
 }
 
 #home-b {
@@ -80,10 +178,40 @@ img {
   background-attachment: fixed;
 }
 
+#home-e {
+  margin-top: 50px;
+}
+
+#home-f {
+  background: #d0a772;
+  height: 120px;
+}
+
+#main-footer {
+  height: 100px;
+  background: black;
+  border-top: 2px #d0a772 dashed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#main-menu {
+  height: 1100px;
+}
+
+#main-menu .container-menu {
+  height: auto;
+  width: 1100px;
+  margin: auto;
+  padding-top: 100px;
+}
+
 .container-nav {
   display: flex;
   justify-content: space-between;
-  padding-right: 300px;
+  padding-right: 250px;
 }
 
 .container-showcase {
@@ -109,11 +237,32 @@ img {
 }
 
 .container-testimonial {
-  max-width: 600px;
+  width: 700px;
   height: 400px;
-  padding: 3rem 6rem;
+  padding: 3rem 0rem;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
+}
+
+.container-contact {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 25px;
+}
+
+.container-testimonial .slides {
+  margin-right: 0;
+  position: relative;
+  width: 300%;
+  left: 0;
+  transition: 1s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .container-nav ul li {
@@ -126,6 +275,7 @@ img {
   font-size: 1.2rem;
   padding-left: 20px;
   padding-right: 20px;
+  transition: 0.3s ease-in-out;
 }
 .container-nav ul li a:hover {
   border: 0 transparent solid;
@@ -139,10 +289,28 @@ img {
   background: #d0a772;
   color: #fff;
 }
-.container-nav ul li a.square-hover:hover {
-  border: 0 transparent solid;
-  background: #d0a772;
-  color: #fff;
+
+.submenu-1 {
+  display: none;
+}
+
+.container-nav ul li:hover .submenu-1 {
+  width: 170px;
+  height: 150px;
+  display: block;
+  position: absolute;
+  background: #fff;
+}
+
+.container-nav ul li:hover .submenu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+.container-nav ul li:hover .submenu-1 ul li {
+  width: 120px;
+  padding: 10px;
+  text-align: left;
 }
 
 .header-a {
@@ -156,9 +324,8 @@ img {
 .text-a {
   font-family: "Athiti", sans-serif;
   color: #f8f9fa;
-  font-size: 18px;
-  padding-left: 50px;
   font-weight: lighter;
+  font-size: 18px;
 }
 
 .text-title {
@@ -210,6 +377,23 @@ img {
 
 .text-testimonial {
   color: #666666;
+}
+
+.text-contact {
+  font-family: "Athiti", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.text-footer {
+  font-size: 18px;
+  color: #fff;
+}
+
+.text-price {
+  font-size: 28px;
+  color: #fff;
+  font-weight: bolder;
 }
 
 span {
@@ -267,7 +451,9 @@ span {
 }
 
 .testimonial-item {
-  width: auto;
+  width: 100%;
+  height: 200%;
+  padding: 0 6rem;
 }
 
 .testimonial-item > .testimonial-img {
@@ -291,22 +477,64 @@ span {
   padding-top: 20px;
 }
 
-.fas.fa-chevron-left {
-  padding: 20px;
-  border: none;
-  background: #d0a772;
-  color: #fff;
-  position: absolute;
-  top: 100px;
-  left: 10px;
+button:focus {
+  outline: none;
 }
 
-.fas.fa-chevron-right {
+.btn-prev,
+.btn-next {
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  color: #fff;
+  background: #d0a772;
   padding: 20px;
   border: none;
-  background: #d0a772;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+  background: black;
+}
+
+.btn-next {
+  right: 0;
+}
+
+.btn-prev {
+  left: 0;
+}
+
+.fa.fa-volume-control-phone,
+.fa.fa-envelope,
+.fa.fa-map-marker {
+  color: #d0a772;
+  margin-top: 25%;
+}
+
+.icon-wrapper {
+  height: 4em;
+  width: 4em;
+  border: 2px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-item {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-information {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.social-media a {
   color: #fff;
-  position: relative;
-  left: 620px;
-  bottom: 816px;
+  padding-right: 15px;
 }

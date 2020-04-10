@@ -36,11 +36,10 @@ img {
   // Home Header
   &-header {
     width: 100%;
-    overflow: hidden;
     background: $bg-medium;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
   }
 
   // Showcase
@@ -49,7 +48,6 @@ img {
       url("../img/slider-03.jpg") no-repeat center center/cover;
     width: auto;
     height: 770px;
-    position: relative;
   }
   //Home
   &-b {
@@ -62,6 +60,38 @@ img {
     background: url("../img/qt-bg.jpg") no-repeat center center/cover;
     background-attachment: fixed;
   }
+
+  &-e {
+    margin-top: 50px;
+  }
+  &-f {
+    background: $main-color;
+    height: 120px;
+  }
+}
+
+//Footer
+#main-footer {
+  height: 100px;
+  background: black;
+  border-top: 2px $main-color dashed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+// Menu page : Menu Section
+
+#main-menu {
+  height: 1100px;
+}
+
+#main-menu .container-menu {
+  height: auto;
+  width: 1100px;
+  margin: auto;
+  padding-top: 100px;
 }
 
 .container {
@@ -69,7 +99,7 @@ img {
   &-nav {
     display: flex;
     justify-content: space-between;
-    padding-right: 300px;
+    padding-right: 250px;
   }
   // Home Showcase
   &-showcase {
@@ -98,12 +128,36 @@ img {
   // Testimonials
 
   &-testimonial {
-    max-width: 600px;
+    width: 700px;
     height: 400px;
-    padding: 3rem 6rem;
+    padding: 3rem 0rem;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
   }
+
+  // Contact
+  &-contact {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 25px;
+  }
+}
+
+//Testimonials slides
+
+.container-testimonial .slides {
+  margin-right: 0;
+  position: relative;
+  width: 300%;
+  left: 0;
+  transition: 1s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .container-nav ul li {
@@ -116,6 +170,7 @@ img {
   font-size: 1.2rem;
   padding-left: 20px;
   padding-right: 20px;
+  transition: 0.3s ease-in-out;
 
   &:hover {
     border: 0 transparent solid;
@@ -130,11 +185,30 @@ img {
     background: $main-color;
     color: $light-color;
   }
-  &.square-hover:hover {
-    border: 0 transparent solid;
-    background: $main-color;
-    color: $light-color;
-  }
+}
+
+// Nested menus
+
+.submenu-1 {
+  display: none;
+}
+
+.container-nav ul li:hover .submenu-1 {
+  width: 170px;
+  height: 150px;
+  display: block;
+  position: absolute;
+  background: $bg-light;
+}
+.container-nav ul li:hover .submenu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+.container-nav ul li:hover .submenu-1 ul li {
+  width: 120px;
+  padding: 10px;
+  text-align: left;
 }
 
 // Header Section Showcase
@@ -151,12 +225,12 @@ img {
 
 .text {
   //Header Section
+  //Header Section
   &-a {
     font-family: "Athiti", sans-serif;
     color: #f8f9fa;
-    font-size: 18px;
-    padding-left: 50px;
     font-weight: lighter;
+    font-size: 18px;
   }
 
   // About Section
@@ -209,6 +283,23 @@ img {
 
   &-testimonial {
     color: $medium-color;
+  }
+  &-contact {
+    font-family: "Athiti", sans-serif;
+    font-size: 20px;
+    color: $light-color;
+  }
+  &-footer {
+    font-size: 18px;
+    color: $light-color;
+  }
+
+  // Menu page - price
+
+  &-price {
+    font-size: 28px;
+    color: $light-color;
+    font-weight: bolder;
   }
 }
 
@@ -276,7 +367,9 @@ span {
 
 .testimonial {
   &-item {
-    width: auto;
+    width: 100%;
+    height: 200%;
+    padding: 0 6rem;
   }
 
   &-item > .testimonial-img {
@@ -301,22 +394,67 @@ span {
   }
 }
 
-.fas.fa-chevron-left {
-  padding: 20px;
-  border: none;
-  background: $main-color;
-  color: $light-color;
-  position: absolute;
-  top: 100px;
-  left: 10px;
+button:focus {
+  outline: none;
 }
 
-.fas.fa-chevron-right {
+.btn-prev,
+.btn-next {
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  color: $light-color;
+  background: $main-color;
   padding: 20px;
   border: none;
-  background: $main-color;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+  background: black;
+}
+
+.btn-next {
+  right: 0;
+}
+
+.btn-prev {
+  left: 0;
+}
+// Contact Section:
+
+.fa.fa-volume-control-phone,
+.fa.fa-envelope,
+.fa.fa-map-marker {
+  color: $main-color;
+  margin-top: 25%;
+}
+
+.icon-wrapper {
+  height: 4em;
+  width: 4em;
+  border: 2px;
+  border-radius: 50%;
+  background: $light-color;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-item {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-information {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+//Footer
+
+.social-media a {
   color: $light-color;
-  position: relative;
-  left: 620px;
-  bottom: 816px;
+  padding-right: 15px;
 }

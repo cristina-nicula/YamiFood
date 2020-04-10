@@ -5,3 +5,22 @@
 .center-item {
  align-content: center;
 }
+
+
+.container-nav .fas {
+  margin-left: 6px;
+}
+
+.background {
+  height: 430px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../img/all-bg.jpg") no-repeat top center/cover;
+  line-height: 300px;
+}
+
+.bottom-line {
+  border: 0.5px dashed #343a40;
+  width: 290px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
