@@ -30,7 +30,7 @@
       href="https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap"
       rel="stylesheet"
     />
-    <title>YamiFood Restaurant</title>
+    <title>Special Menu | YamiFood Restaurant</title>
   </head>
   <body>
     <!--  Header - begin-->
@@ -39,7 +39,6 @@
       <div class="container-nav">
         <img src="img/logo.png" alt="logo" id="logo" />
 
-        <!--        TODO: nested items menu-->
         <!--        TODO: border radius doar la primul si ultimul buton-->
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
@@ -55,6 +54,12 @@
           </li>
           <li>
             <a href="index.html">Blog <i class="fas fa-sort-down"></i> </a>
+            <div class="submenu-2">
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Articles</a></li>
+              </ul>
+            </div>
           </li>
           <li><a href="menu.html" class="current">Menu</a></li>
           <li><a href="about.html">About</a></li>
@@ -79,126 +84,144 @@
         </p>
         <br />
         <br />
+
+        <div class="filter">
+          <a class="all active" data-filter="all" href="#" role="button">All</a>
+          <a class="drinks" data-filter="drinks" href="#" role="button"
+            >Drinks</a
+          >
+          <a class="lunch" data-filter="lunch" href="#" role="button">Lunch</a>
+          <a class="dinner" data-filter="dinner" href="#" role="button"
+            >Dinner</a
+          >
+        </div>
+        <br />
         <div class="menu-items">
-          <div class="item">
-            <div class="item-image">
-              <img src="img/img-01.jpg" alt="Drink1" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Drink 1</h2>
-                <p class="text-a">
-                  Lorem ipsum dolor sit amet, consectetur.
-                </p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$7.79</p>
+          <a class="drinks" data-category="drinks" href="#">
+            <div class="item">
+              <div class="item-image">
+                <img src="img/img-01.jpg" alt="Drink1" />
+              </div>
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <h2 class="item-name">Special Drink 1</h2>
+                  <p class="text-a">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </p>
+                  <div class="bottom-line"></div>
+                  <p class="text-price">$7.79</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="item-image">
-              <img src="img/img-02.jpg" alt="Drink2" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Drink 2</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$9.79</p>
+            <div class="item">
+              <div class="item-image">
+                <img src="img/img-02.jpg" alt="Drink2" />
+              </div>
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <h2 class="item-name">Special Drink 2</h2>
+                  <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                  <div class="bottom-line"></div>
+                  <p class="text-price">$9.79</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="item-image">
-              <img src="img/img-03.jpg" alt="Drink3" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Drink 3</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$10.59</p>
+            <div class="item">
+              <div class="item-image">
+                <img src="img/img-03.jpg" alt="Drink3" />
+              </div>
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <h2 class="item-name">Special Drink 3</h2>
+                  <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                  <div class="bottom-line"></div>
+                  <p class="text-price">$10.59</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="item-image">
-              <img src="img/img-04.jpg" alt="Lunch1" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Lunch 1</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$17.79</p>
+          </a>
+          <a class="lunch" data-category="lunch" href="#">
+            <div class="item">
+              <div class="item-image">
+                <img src="img/img-04.jpg" alt="Lunch1" />
+              </div>
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <h2 class="item-name">Special Lunch 1</h2>
+                  <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                  <div class="bottom-line"></div>
+                  <p class="text-price">$17.79</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="item-image">
-              <img src="img/img-05.jpg" alt="Lunch2" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Lunch 2</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$15.79</p>
+            <div class="item">
+              <div class="item-image">
+                <img src="img/img-05.jpg" alt="Lunch2" />
+              </div>
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <h2 class="item-name">Special Lunch 2</h2>
+                  <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                  <div class="bottom-line"></div>
+                  <p class="text-price">$15.79</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="item-image">
-              <img src="img/img-06.jpg" alt="Lunch3" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Lunch 3</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$18.79</p>
+            <div class="item">
+              <div class="item-image">
+                <img src="img/img-06.jpg" alt="Lunch3" />
+              </div>
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <h2 class="item-name">Special Lunch 3</h2>
+                  <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                  <div class="bottom-line"></div>
+                  <p class="text-price">$18.79</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="item-image">
-              <img src="img/img-07.jpg" alt="Dinner1" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Dinner 1</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$20.79</p>
+          </a>
+          <a class="dinner" data-category="dinner" href="#">
+            <div class="item">
+              <div class="item-image">
+                <img src="img/img-07.jpg" alt="Dinner1" />
+              </div>
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <h2 class="item-name">Special Dinner 1</h2>
+                  <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                  <div class="bottom-line"></div>
+                  <p class="text-price">$20.79</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="item-image">
-              <img src="img/img-08.jpg" alt="Dinner2" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Dinner 2</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$21.79</p>
+            <div class="item">
+              <div class="item-image">
+                <img src="img/img-08.jpg" alt="Dinner2" />
+              </div>
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <h2 class="item-name">Special Dinner 2</h2>
+                  <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                  <div class="bottom-line"></div>
+                  <p class="text-price">$21.79</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="item-image">
-              <img src="img/img-09.jpg" alt="Dinner3" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Dinner 3</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$23.25</p>
+            <div class="item">
+              <div class="item-image">
+                <img src="img/img-09.jpg" alt="Dinner3" />
+              </div>
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <h2 class="item-name">Special Dinner 3</h2>
+                  <p class="text-a">Lorem ipsum dolor sit amet.</p>
+                  <div class="bottom-line"></div>
+                  <p class="text-price">$23.25</p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -313,6 +336,8 @@
       </div>
     </section>
     <!--    Footer - end -->
+    <!--    JS Menu Filter-->
+    <script src="js/main.js"></script>
     <!--  JS for slider-->
     <script>
       $(document).ready(function () {

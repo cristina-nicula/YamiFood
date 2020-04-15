@@ -74,7 +74,7 @@ img {
 #main-footer {
   height: 100px;
   background: black;
-  border-top: 2px $main-color dashed;
+  border-top: 1.4px $main-color dashed;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -85,13 +85,6 @@ img {
 
 #main-menu {
   height: 1100px;
-}
-
-#main-menu .container-menu {
-  height: auto;
-  width: 1100px;
-  margin: auto;
-  padding-top: 100px;
 }
 
 .container {
@@ -124,6 +117,13 @@ img {
     margin: auto;
     overflow: hidden;
   }
+  //Menu
+  &-menu {
+    height: auto;
+    width: 1100px;
+    margin: auto;
+    padding-top: 100px;
+  }
 
   // Testimonials
 
@@ -144,6 +144,11 @@ img {
     justify-content: center;
     overflow: hidden;
     padding-top: 25px;
+  }
+  // Contact page
+  &-formcontact {
+    width: auto;
+    margin-top: 50px;
   }
 }
 
@@ -206,6 +211,28 @@ img {
 }
 
 .container-nav ul li:hover .submenu-1 ul li {
+  width: 120px;
+  padding: 10px;
+  text-align: left;
+}
+
+.submenu-2 {
+  display: none;
+}
+
+.container-nav ul li:hover .submenu-2 {
+  width: 200px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  background: $bg-light;
+}
+.container-nav ul li:hover .submenu-2 ul {
+  display: block;
+  margin: 10px;
+}
+
+.container-nav ul li:hover .submenu-2 ul li {
   width: 120px;
   padding: 10px;
   text-align: left;
@@ -308,7 +335,6 @@ span {
 }
 //Showcase section
 .btn-light {
-  display: inline-block;
   background: transparent;
   font-size: 14px;
   text-transform: uppercase;
@@ -346,7 +372,6 @@ span {
 }
 
 .btn-dark {
-  display: inline-block;
   background: transparent;
   font-size: 14px;
   text-transform: uppercase;
@@ -457,4 +482,46 @@ button:focus {
 .social-media a {
   color: $light-color;
   padding-right: 15px;
+}
+
+//Contact page
+
+#contact {
+  #contact {
+    height: 600px;
+  }
+
+  #contact .container-formcontact {
+    text-align: center;
+
+    form {
+      width: 1100px;
+      margin: 0 auto;
+    }
+
+    div.center-button {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    outline-color: $main-color;
+    font-family: "Athiti", sans-serif;
+    font-size: medium;
+  }
+
+  .form {
+    margin-top: 15px;
+  }
+
+  .map {
+    height: 500px;
+  }
 }

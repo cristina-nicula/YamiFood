@@ -1,3 +1,7 @@
+:root {
+  --animate-speed: 1.5s;
+}
+
 .gallery-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -16,6 +20,8 @@
   box-shadow: 0 10px 20px #ccc;
   transition: transform .3s ease-out;
 }
+
+// Special Menu - Menu Page
 
 .menu-items {
   display: grid;
@@ -116,3 +122,44 @@ transform: scale(1.1);
     transform: translateY(-50%);
   }
 }
+
+// Filter Menu
+
+#main-menu .container-menu .filter {
+  width: 500px;
+  height: 50px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+#main-menu .container-menu .filter a {
+  text-decoration: none;
+  font-family: "Athiti", sans-serif;
+  text-transform: uppercase;
+  color: $dark-color;
+  font-weight: bold;
+  padding: 10px 40px;
+}
+
+#main-menu .container-menu .filter a.active {
+  border: 1px solid $main-color;
+  border-radius: 4px;
+  background: $main-color;
+  color: $light-color;
+}
+
+
+  //About Page
+
+#home-b .extra-info {
+  height: 250px;
+  text-align: justify;
+  margin-left:  120px;
+  margin-right: 120px;
+  margin-bottom: 120px;
+}
+

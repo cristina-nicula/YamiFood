@@ -13,6 +13,7 @@
       content="yami, food, restaurant, good food, good vibes"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -30,7 +31,7 @@
       href="https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap"
       rel="stylesheet"
     />
-    <title>YamiFood Restaurant</title>
+    <title>Home | YamiFood Restaurant</title>
   </head>
   <body>
     <!--  Header - begin-->
@@ -39,7 +40,6 @@
       <div class="container-nav">
         <img src="img/logo.png" alt="logo" id="logo" />
 
-        <!--        TODO: nested items menu-->
         <!--        TODO: border radius doar la primul si ultimul buton-->
         <ul class="menu">
           <li><a href="index.html" class="current">Home</a></li>
@@ -55,6 +55,12 @@
           </li>
           <li>
             <a href="index.html">Blog <i class="fas fa-sort-down"></i> </a>
+            <div class="submenu-2">
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Articles</a></li>
+              </ul>
+            </div>
           </li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="about.html">About</a></li>
@@ -94,28 +100,28 @@
 
     <section id="home-b">
       <div class="container-about">
-        <!--        TODO:hover effect cand faci scroll in aceasta sectiune textul apare eased in-->
         <img src="img/about-img.jpg" alt="" class="about-img" />
         <div class="about-description">
-          <h2 class="text-title">
+          <h2 class="text-title" data-aos="fade-down">
             Welcome To <span class="text-span">YamiFood Restaurant</span>
           </h2>
           <br />
           <br />
-          <p class="text-b center-text">
+          <p class="text-b center-text" data-aos="fade-left">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
             eius illum optio totam vel vero! Aliquid commodi consequatur debitis
             distinctio error harum in incidunt, nulla, perferendis quas,
             temporibus voluptatibus. Iste!
           </p>
           <br />
-          <p class="text-b center-text">
+          <p class="text-b center-text" data-aos="fade-left">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
             consequatur illo illum minus similique sit ut veritatis vero
             voluptates voluptatum.
           </p>
           <button
             class="btn-dark"
+            data-aos="fade-up"
             onclick="location.href='https://google.com';"
           >
             Reservation
@@ -293,6 +299,13 @@
 
           $(".slides").css("left", -x + "%");
         });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 800,
       });
     </script>
   </body>
