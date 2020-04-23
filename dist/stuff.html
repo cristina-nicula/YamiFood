@@ -30,7 +30,7 @@
       href="https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap"
       rel="stylesheet"
     />
-    <title>Special Menu | YamiFood Restaurant</title>
+    <title>Stuff | YamiFood Restaurant</title>
   </head>
   <body>
     <!--  Header - begin-->
@@ -41,7 +41,9 @@
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
           <li>
-            <a href="index.html">Pages <i class="fas fa-sort-down"></i> </a>
+            <a href="index.html" class="current"
+              >Pages <i class="fas fa-sort-down"></i>
+            </a>
             <div class="submenu-1">
               <ul>
                 <li><a href="contact.html">Reservation</a></li>
@@ -59,7 +61,7 @@
               </ul>
             </div>
           </li>
-          <li><a href="menu.html" class="current">Menu</a></li>
+          <li><a href="menu.html">Menu</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -69,177 +71,94 @@
     <!--  Header - end -->
     <!--    Background Section - begin -->
     <div class="background">
-      <h1 class="text-c center-text">Special Menu</h1>
+      <h1 class="text-c center-text">Stuff</h1>
     </div>
     <!--    Background Section - end-->
-    <!--Menu Section - begin -->
-    <section id="main-menu">
-      <div class="container-menu">
-        <h2 class="text-d center-text">Special Menu</h2>
+    <!--    Stuff Section - begin-->
+    <section id="stuff">
+      <div class="container-stuff">
+        <h2 class="text-d center-text">Stuff</h2>
         <p class="text-b center-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
-          provident.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Reprehenderit, repudiandae?
         </p>
-        <br />
-        <br />
-        <input type="radio" id="All" name="categories" value="All" checked />
-        <input type="radio" id="Drinks" name="categories" value="Drinks" />
-        <input type="radio" id="Lunch" name="categories" value="Lunch" />
-        <input type="radio" id="Dinner" name="categories" value="Dinner" />
-        <ol class="filters">
-          <li>
-            <label for="All">All</label>
-          </li>
-          <li>
-            <label for="Drinks">Drinks</label>
-          </li>
-          <li>
-            <label for="Lunch">Lunch</label>
-          </li>
-          <li>
-            <label for="Dinner">Dinner</label>
-          </li>
-        </ol>
-        <br />
-        <div class="menu-items">
-          <div class="item" data-category="Drinks">
-            <div class="item-image">
-              <img src="img/img-01.jpg" alt="Drink1" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Drink 1</h2>
-                <p class="text-a">
-                  Lorem ipsum dolor sit amet, consectetur.
-                </p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$7.79</p>
+        <div class="stuff-items">
+          <div class="exterior-border">
+            <div class="stuff-item">
+              <div class="stuff-image">
+                <img src="img/stuff-img-01.jpg" alt="Chef1" />
+              </div>
+              <div class="stuff-text center-text">
+                <div class="stuff-text-wrap center-tex">
+                  <div class="stuff-name">Dan Watson</div>
+                  <div class="stuff-profession">Web developer</div>
+                  <div class="wrapper">
+                    <div class="item-wrap">
+                      <a href="stuff.html"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div class="item-wrap">
+                      <a href="stuff.html"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="item-wrap">
+                      <a href="stuff.html"><i class="fa fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="item" data-category="Drinks">
-            <div class="item-image">
-              <img src="img/img-02.jpg" alt="Drink2" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Drink 2</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$9.79</p>
+          <div class="exterior-border">
+            <div class="stuff-item">
+              <div class="stuff-image">
+                <img src="img/stuff-img-02.jpg" alt="Chef1" />
+              </div>
+              <div class="stuff-text center-text">
+                <div class="stuff-text-wrap">
+                  <div class="stuff-name">Bill Grey</div>
+                  <div class="stuff-profession">Doctor</div>
+                  <div class="wrapper">
+                    <div class="item-wrap">
+                      <a href="stuff.html"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div class="item-wrap">
+                      <a href="stuff.html"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="item-wrap">
+                      <a href="stuff.html"><i class="fa fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="item" data-category="Drinks">
-            <div class="item-image">
-              <img src="img/img-03.jpg" alt="Drink3" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Drink 3</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$10.59</p>
+          <div class="exterior-border">
+            <div class="stuff-item">
+              <div class="stuff-image">
+                <img src="img/stuff-img-03.jpg" alt="Chef1" />
               </div>
-            </div>
-          </div>
-
-          <div class="item" data-category="Lunch">
-            <div class="item-image">
-              <img src="img/img-04.jpg" alt="Lunch1" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Lunch 1</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$17.79</p>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-category="Lunch">
-            <div class="item-image">
-              <img src="img/img-05.jpg" alt="Lunch2" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Lunch 2</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$15.79</p>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-category="Lunch">
-            <div class="item-image">
-              <img src="img/img-06.jpg" alt="Lunch3" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Lunch 3</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$18.79</p>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-category="Dinner">
-            <div class="item-image">
-              <img src="img/img-07.jpg" alt="Dinner1" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Dinner 1</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$20.79</p>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-category="Dinner">
-            <div class="item-image">
-              <img src="img/img-08.jpg" alt="Dinner2" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Dinner 2</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$21.79</p>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-category="Dinner">
-            <div class="item-image">
-              <img src="img/img-09.jpg" alt="Dinner3" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-name">Special Dinner 3</h2>
-                <p class="text-a">Lorem ipsum dolor sit amet.</p>
-                <div class="bottom-line"></div>
-                <p class="text-price">$23.25</p>
+              <div class="stuff-text">
+                <div class="stuff-text-wrap center-text">
+                  <div class="stuff-name">Charles Robert</div>
+                  <div class="stuff-profession">Mechanical Engineer</div>
+                  <div class="wrapper">
+                    <div class="item-wrap">
+                      <a href="stuff.html"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div class="item-wrap">
+                      <a href="stuff.html"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="item-wrap">
+                      <a href="stuff.html"><i class="fa fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--    Menu Section - end -->
-    <!--  Quotation Section - begin -->
-
-    <section id="home-c">
-      <h1 class="text-c">
-        "If you're not the one cooking, stay out
-        <br />
-        <br />
-        of the way and compliment the chef."
-      </h1>
-      <br />
-      <p class="text-quotation">Michael Strahan</p>
-    </section>
-
-    <!--  Quotation Section - end -->
+    <!--    Stuff Section - end -->
     <!--  Testimonials Section -begin -->
 
     <section id="home-e">
@@ -375,8 +294,6 @@
       </div>
     </section>
     <!--    Footer - end -->
-    <!--    JS Menu Filter-->
-    <script src="js/main.js"></script>
     <!--  JS for slider-->
     <script>
       $(document).ready(function () {

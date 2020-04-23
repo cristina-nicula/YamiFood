@@ -81,13 +81,7 @@ img {
   justify-content: space-evenly;
 }
 
-// Menu page : Menu Section
-
-#main-menu {
-  height: 1100px;
-}
-
-.container {
+ {
   // Home Header
   &-nav {
     display: flex;
@@ -120,6 +114,7 @@ img {
   //Menu
   &-menu {
     height: auto;
+    overflow: auto;
     width: 1100px;
     margin: auto;
     padding-top: 100px;
@@ -144,11 +139,21 @@ img {
     justify-content: center;
     overflow: hidden;
     padding-top: 25px;
+    margin-left: 80px;
   }
   // Contact page
   &-formcontact {
     width: auto;
     margin-top: 50px;
+  }
+  //Stuff page
+
+  &-stuff {
+    height: auto;
+    overflow: auto;
+    width: 1100px;
+    margin: auto;
+    padding-top: 100px;
   }
 }
 
@@ -328,6 +333,19 @@ img {
     color: $light-color;
     font-weight: bolder;
   }
+  // Blog page
+  &-blog {
+    font-size: 15px;
+    color: $medium-color;
+  }
+  &-publication {
+    font-size: 15px;
+    color: $main-color;
+    text-decoration: none;
+  }
+  &-publication:hover {
+    color: $dark-color;
+  }
 }
 
 span {
@@ -476,12 +494,105 @@ button:focus {
   margin-left: 20px;
   margin-top: 10px;
 }
+// Second footer
+
+#second-footer {
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/footer-bg.jpg") no-repeat center center/cover;
+}
+
+#second-footer .container-second-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#second-footer .container-second-footer .box-1 {
+  width: 250px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+#second-footer .container-second-footer .box-1 .header-footer {
+  font-family: "Athiti", sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: $light-color;
+}
+
+#second-footer .container-second-footer .box-1 .bottom-line2 {
+  border: 0.1px dashed $main-color;
+  width: 230px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#second-footer .container-second-footer .box-1 .text-second-footer {
+  font-family: "Athiti", sans-serif;
+  font-size: 14px;
+  color: $light-color;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+#second-footer .container-second-footer .box-1 .address {
+  font-family: "Athiti", sans-serif;
+  font-size: 19px;
+  color: $light-color;
+  margin-bottom: 20px;
+}
+
+.second-contact {
+  text-decoration: none;
+  color: $light-color;
+  font-family: "Athiti", sans-serif;
+  font-size: 18px;
+}
+
+#second-footer .container-second-footer .box-1 input {
+  background: black;
+  border: none;
+  outline-color: red;
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+}
+.btn-subscribe {
+  text-decoration: none;
+  background: $main-color;
+  border: none;
+  color: $light-color;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 50px;
+  width: 100%;
+}
+
+.btn-subscribe:hover {
+  background: black;
+  transition: all 1s;
+}
 
 //Footer
 
 .social-media a {
   color: $light-color;
   padding-right: 15px;
+}
+
+// Pages
+
+//About Page
+
+#home-b .extra-info {
+  height: 250px;
+  text-align: justify;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 120px;
 }
 
 //Contact page
@@ -521,4 +632,92 @@ select {
 
 .map {
   height: 500px;
+}
+
+// Blog page
+
+#blog .begin {
+  margin-top: 50px;
+}
+
+.container-blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 50px 200px;
+}
+
+.blog-box {
+  border: 1px solid #cccccc;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  transition-duration: 1s;
+}
+
+.hoverimg1:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/blog-img-01.jpg") no-repeat center center/cover;
+}
+
+.hoverimg2:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/blog-img-02.jpg") no-repeat center center/cover;
+}
+
+.hoverimg3:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/blog-img-03.jpg") no-repeat center center/cover;
+}
+
+.hoverimg4:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/blog-img-04.jpg") no-repeat center center/cover;
+}
+.hoverimg5:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/blog-img-05.jpg") no-repeat center center/cover;
+}
+.hoverimg6:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/blog-img-06.jpg") no-repeat center center/cover;
+}
+.hoverimg7:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/blog-img-07.jpg") no-repeat center center/cover;
+}
+.hoverimg8:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/blog-img-08.jpg") no-repeat center center/cover;
+}
+.hoverimg9:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/blog-img-09.jpg") no-repeat center center/cover;
 }
