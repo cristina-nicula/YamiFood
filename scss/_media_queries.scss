@@ -1,6 +1,225 @@
 // Smartphones
 
-@media (max-width: 400px) {
-  
+@media (max-width: 800px) {
+  // Hamburger menu
 
+  body #home-header .whole-nav {
+    display: block;
+  }
+
+  body #home-header label {
+    display: block;
+    cursor: pointer;
+  }
+
+  body  #home-header ul li {
+    padding: 0px 0px;
+    border-radius: 0;
+  }
+
+  body  #home-header ul li a {
+    padding: 20px 0px;
+    border-radius: 0;
+  }
+
+ body #home-header .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    position: absolute;
+    background: $bg-medium;
+  }
+
+  body #home-header ul li a {
+    display: block;
+    margin: 0;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  body #home-header ul li:hover .submenu-1,
+  body #home-header ul li:hover .submenu-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+    // Showcase area -home page
+
+  body #home-a {
+    height: 640px;
+  }
+
+  #home-a .container-showcase {
+    width: 80%;
+    height: 60%;
+  }
+  #home-a .container-showcase .header-a {
+    margin: 10px;
+    font-size: 22px;
+    line-height: 1.5rem;
+  }
+
+  #home-a .container-showcase .text-a {
+    font-size: 14px;
+  }
+
+  .btn-light {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  // About Section - home page
+
+  body #home-b {
+    display: flex;
+    flex-direction: column;
+  }
+
+ body #home-b .container-about {
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body #home-b .container-about .about-img {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    height: 70%;
+  }
+
+  body #home-b .container-about .about-description {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  body #home-b .container-about .about-description .text-title {
+    font-size: 22px;
+  }
+  // Quotation
+ body #home-c .container-quotation {
+   width: 80%;
+   top: 10%;
+   left: 10%;
+
+ }
+// Gallery
+  body #home-d .container-gallery {
+    height: auto;
+  }
+  body .container-gallery .gallery-items {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  body .container-gallery .gallery-items .gallery-item {
+    height: 50vw;
+  }
+    // Testimonials
+
+  #home-e .container-testimonial {
+    width: 100%;
+  }
+
+  .container-testimonial .slides .testimonial-item {
+    padding: 0 10px;
+  }
+  // Contact section
+  body #home-f {
+    height: auto;
+  }
+
+  #home-f .container-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 25px;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+  #home-f .container-contact .contact-item {
+    width: 350px;
+    margin-left: 5px;
+  }
+
+  // Second footer
+  body #second-footer {
+    height: auto;
+  }
+
+  body #second-footer .container-second-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+   justify-items: center;
+  }
+
+  body #second-footer .container-second-footer .box-1 {
+    width: 80%;
+    text-align: left;
+  }
+
+  body #second-footer .container-second-footer .box-1:last-child {
+    margin-bottom: 30px;
+  }
+// Footer
+
+  body #main-footer {
+    flex-direction: column;
+  }
+
+  body #main-footer .text-footer {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  // Contact page
+
+  #contact .container-formcontact form {
+    width: 80%;
+  }
+
+  // Stuff page
+
+  body #stuff .container-stuff .stuff-items {
+    grid-template-columns: 1fr;
+  }
+
+// Blog page
+
+  body #blog .container-blog {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+// Article page
+
+
+  body #article .container-article {
+    grid-template-columns: 1fr;
+  }
+
+  body #article .container-article .container-col1,
+  body #article .container-article .container-col2
+  {
+    width: 105%;
+  }
+
+  body .recent-article {
+    grid-gap: 15px;
+  }
+
+  // Menu page
+  body .container-menu .filters {
+    width: 83%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body #main-menu .menu-items {
+    grid-template-columns: 1fr;
+  }
 }
+

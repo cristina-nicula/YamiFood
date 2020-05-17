@@ -15,7 +15,7 @@
   height: 430px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
   url("../img/all-bg.jpg") no-repeat top center/cover;
-  line-height: 300px;
+  line-height: 500px;
 }
 
 .bottom-line {
@@ -27,7 +27,7 @@
 
 .vertical-line {
   border: 0.5px solid $dark-color;
-  margin: 7px 15px;
+  margin: 7px 10px;
   height: 10px;
 
 }
@@ -38,7 +38,7 @@
 
 .small-vertical-line {
   border: 0.5px solid $dark-color;
-  margin: 8px 15px;
+  margin: 8px 10px;
   height: 7px;
 }
 
@@ -47,8 +47,8 @@
   border: 0.5px solid $dark-color;
 }
 
-.btnup {
-  position: fixed;
+ .btnup {
+   position: fixed;
   width: 30px;
   height: 30px;
   background-color: $main-color;

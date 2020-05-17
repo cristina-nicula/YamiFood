@@ -31,35 +31,39 @@
     <!--  Header - begin-->
 
     <header id="home-header">
-      <div class="container-nav">
-        <img src="img/logo.png" alt="logo" id="logo" />
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="index.html">Pages <i class="fas fa-sort-down"></i> </a>
-            <div class="submenu-1">
-              <ul>
-                <li><a href="contact.html">Reservation</a></li>
-                <li><a href="stuff.html">Stuff</a></li>
-                <li><a href="index.html">Gallery</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="index.html" class="current"
-              >Blog <i class="fas fa-sort-down"></i>
-            </a>
-            <div class="submenu-2">
-              <ul>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="article.html">Articles</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="whole-nav">
+        <div class="navigation">
+          <img src="img/logo.png" alt="logo" id="logo" />
+          <label for="toggle">&#9776;</label>
+        </div>
+        <div class="menu-nav">
+          <input type="checkbox" id="toggle" />
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a>Pages <i class="fas fa-sort-down"></i></a>
+              <div class="submenu-1">
+                <ul>
+                  <li><a href="contact.html">Reservation</a></li>
+                  <li><a href="stuff.html">Stuff</a></li>
+                  <li><a href="#">Gallery</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a>Blog <i class="fas fa-sort-down"></i> </a>
+              <div class="submenu-2">
+                <ul>
+                  <li><a href="blog.html" class="current">Blog</a></li>
+                  <li><a href="article.html">Articles</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
